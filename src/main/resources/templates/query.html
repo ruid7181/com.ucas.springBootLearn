@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query Service</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/js/TMDataQuery.js"></script>
+</head>
+<body>
+
+<div>
+    <input name="path" type="text" id="path"/>
+    <input name="row" type="text" id="row"/>
+</div>
+<div>
+    起始时间：
+    <input name="time range" type="date" id="t_start"/>
+    终止时间：
+    <input name="time range" type="date" id="t_end"/>
+    自定义时间列表：
+    <input name="time list" type="text" id="t_lis">
+</div>
+
+<button onclick="to_json()" >Submit</button>
+<table class="table"></table>
+
+</body>
+</html>

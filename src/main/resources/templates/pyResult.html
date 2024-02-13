@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"></html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Result</title>
+</head>
+<body>
+    <tr th:each="line:${execRes}">
+        <!--/*@thymesVar id="line" type="java.lang.String"*/-->
+        <p th:text="${line}"></p>
+    </tr>
+</body>
+</html>
